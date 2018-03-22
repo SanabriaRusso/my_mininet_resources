@@ -8,6 +8,13 @@ Feel free to contribute to this repository, as well as a mandatory update of thi
 
 L
 
+## myVerySimpleNet.py
+It uses Mininet medium level APIs to create a single switch topology with two nodes connected to it.
+
+It serves as the starting point for the rest of topologies using the medium level APIs contained in this repository.
+
+The example assumes there is an EXTERNAL SDN CONTROLLER. So, look at the code and change the IP for this, or just replace with 127.0.0.1 to let a local SDN Controller allow ping among hosts.
+
 ## myTriangleNet.py
 It uses Mininet medium level APIs to create a topology where switches are connected to form a triangle. From each vertex/switch, 2 host are connected via Ethernet.
 
