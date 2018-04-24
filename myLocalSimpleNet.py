@@ -10,7 +10,7 @@ NOTE: This is a very simple example that only considers 1 switch in the network.
 """
 
 from mininet.net import Mininet
-from mininet.node import RemoteController, OVSSwitch
+from mininet.node import OVSSwitch, Controller
 from mininet.cli import CLI
 from mininet.log import setLogLevel, info
 import sys
@@ -18,12 +18,12 @@ import sys
 Sw = 1 # number of switches
 Nps = 2 # number of nodes per switch
 
-def mySDNExample(cip="10.1.14.52"):
+def mySDNExample():
 
-    net = Mininet( controller=RemoteController, switch=OVSSwitch )
+    net = Mininet( controller=Controller, switch=OVSSwitch )
 
-    info( "*** Creating controller, IP: %s\n" % cip)
-    c0 = net.addController( name='c0', ip=cip, port=6633 )
+    info( "*** Creating controller\n" )
+    c0 = net.addController( name='c0', port=6633 )
 
     info( "*** Creating switches\n")
     switches = {}

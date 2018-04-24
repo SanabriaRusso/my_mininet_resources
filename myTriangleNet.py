@@ -16,9 +16,9 @@ import sys
 Sw = 3 # number of switches
 Nps = 2 # number of nodes per switch
 
-def mySDNExample(cip="10.1.14.51"):
+def mySDNExample(cip="10.1.14.52"):
 
-    net = Mininet( controller=RemoteController, switch=OVSSwitch )
+    net = Mininet(controller=RemoteController, switch=OVSSwitch )
 
     info( "*** Creating controller, IP: %s\n" % cip)
     c0 = net.addController( name='c0', ip=cip, port=6633 )

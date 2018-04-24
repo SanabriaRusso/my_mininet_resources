@@ -20,6 +20,9 @@ It uses Mininet medium level APIs to create a topology where switches are connec
 
 The example assumes there is an EXTERNAL SDN CONTROLLER. So, look at the code and change the IP for this, or just replace with 127.0.0.1 to let a local SDN Controller allow ping among hosts.
 
+## myLocalSimpleNet.py
+Similar to mySimpleNet.py, but this time the controller is local. That is, commands such as pingall, and others, will work because switches do not need an SDN Controller.
+
 ### Ideas to extend it
 - Incorporate details on the links, e.g.: bandwidth, error, and other.
 - Incorporate CPU-limited hosts.
