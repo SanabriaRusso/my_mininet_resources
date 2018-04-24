@@ -8,6 +8,8 @@ Feel free to contribute to this repository, as well as a mandatory update of thi
 
 L
 
+# Example scripts
+
 ## myVerySimpleNet.py
 It uses Mininet medium level APIs to create a single switch topology with two nodes connected to it.
 
@@ -26,3 +28,20 @@ Similar to mySimpleNet.py, but this time the controller is local. That is, comma
 ### Ideas to extend it
 - Incorporate details on the links, e.g.: bandwidth, error, and other.
 - Incorporate CPU-limited hosts.
+
+# Topology Visualization
+After building a topology, sometimes it is very useful to have a visual representation of it. This can help you debugg your code, or at least, help you understand what you are doing.
+
+Head over to the [Mininet Topology Visualizer]. Then, you can simply execute your Mininet script and copy the output of:
+```bash
+mininet> dump
+```
+and,
+```bash
+mininet> links
+```
+
+, to the corresponding text holders. Clicking on "Render Graph" will draw the topology according to the supplied inputs.
+
+
+[Mininet Topology Visualizer]: http://demo.spear.narmox.com/app/?apiurl=demo#!/mininet
